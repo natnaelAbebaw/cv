@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+        * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #444;
+  background-color: transparent;
+}
+
+.grid {
+  display: grid;
+  width: 80%;
+  margin: 10rem auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  height: 180vh;
+}
+.grid-col-2 {
+  grid-template-columns: 1fr 3fr;
+}
+
+.col:first-child {
+  background-color: #08457e;
+}
+
+.col:first-child .row {
+  color: #fff;
+}
+.col:first-child .row:first-child h2 {
+  font-size: 1.6rem;
+  letter-spacing: 1.3px;
+  font-size: 4.8rem;
+  padding: 2rem 0 1rem 0;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.col:first-child .row:first-child {
+  padding: 2rem 2rem 4rem 2rem;
+}
+.col:first-child .row:first-child p {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  letter-spacing: 1.3px;
+}
+
+.col:first-child .row:nth-child(2) h2 {
+  background: #074075;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+  letter-spacing: 1.3px;
+}
+
+.col:first-child .row:nth-child(2) .sub-row {
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+.col:first-child .row:nth-child(2) .sub-row:last-child {
+  margin-bottom: 3rem;
+}
+.col:first-child .row:nth-child(2) .sub-row h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 1.3px;
+  margin-bottom: 3px;
+}
+.col:first-child .row:nth-child(2) .sub-row p {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.col:first-child .row:last-child h2 {
+  background: #074075;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  letter-spacing: 1.3px;
+}
+
+.col:first-child .row:last-child ul {
+  list-style: none;
+  font-size: 1.4rem;
+  padding: 0 2rem;
+  letter-spacing: 1.3px;
+}
+
+.col:first-child .row:last-child li {
+  margin-bottom: 2rem;
+}
+
+.col:last-child .row:first-child {
+  padding: 4rem 6rem 0 6rem;
+  font-size: 1.6rem;
+  letter-spacing: 1.3px;
+}
+
+.col:last-child .row:first-child p {
+  border-bottom: 1px solid #999;
+  letter-spacing: 1.4px;
+  line-height: 1.7;
+  padding-bottom: 2rem;
+}
+.col:last-child .row:nth-child(2) h2 {
+  font-size: 2.4rem;
+  padding: 1rem 0;
+  color: #08457e;
+  letter-spacing: 1.3px;
+}
+.col:last-child .row:nth-child(2) {
+  padding: 0 6rem;
+}
+
+.col:last-child .row:nth-child(2) p {
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+  font-size: 1.6rem;
+  padding: 2rem 0;
+  line-height: 1.7;
+  padding: 2rem 0 2rem 15rem;
+  letter-spacing: 1.3px;
+}
+
+.col:last-child .row:nth-child(3) h2 {
+  font-size: 2.4rem;
+  padding: 1rem 0;
+  color: #08457e;
+  letter-spacing: 1.3px;
+}
+.col:last-child .row:nth-child(3) {
+  padding: 0 6rem;
+}
+
+.col:last-child .row:nth-child(3) ul {
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+  padding: 2rem 0 2rem 15rem;
+  font-size: 1.6rem;
+  list-style: symbols("23223");
+  line-height: 1.7;
+  letter-spacing: 1.3px;
+}
+
+.col:last-child .row:nth-child(3) li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.col:last-child .row:last-child h2 {
+  font-size: 2.4rem;
+  padding: 1rem 0;
+  color: #08457e;
+  letter-spacing: 1.3px;
+}
+.col:last-child .row:last-child {
+  padding: 0 6rem;
+}
+
+.col:last-child .row:last-child p {
+  line-height: 1.7;
+  letter-spacing: 1.3px;
+  border-top: 1px solid #999;
+  font-size: 1.6rem;
+  padding: 2rem 0 2rem 15rem;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="grid grid-col-2">
+      <div class="col">
+        <div class="row">
+          <h2>natnael abebaw</h2>
+          <p>software engineering student</p>
+        </div>
+
+        <div class="row">
+          <h2>Contacts</h2>
+          <div class="sub-row">
+            <h3>Address</h3>
+            <p>Addis Ababa Ethiopia</p>
+          </div>
+          <div class="sub-row">
+            <h3>Phone</h3>
+            <p>+251 920123302</p>
+          </div>
+          <div class="sub-row">
+            <h3>E-mail</h3>
+            <p>natnaell70a@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <h2>Skills</h2>
+
+          <ul>
+            <li>Problem solving</li>
+            <li>Visually creative</li>
+            <li>Oral and write communication</li>
+            <li>Web design and development</li>
+            <li>Teamwork</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <p>
+            A Software Engineering student at Addis Ababa institute of
+            Technology. I am current seeking an internship program. I am eager
+            to gain real-world experience in the software development industry.
+            I am passionate about technology and possess a strong foundation in
+            programming languages , data structure, algorithms, and other core
+            software engineering concepts.
+          </p>
+        </div>
+        <div class="row">
+          <h2>Education</h2>
+          <p>
+            Joined the Addis Ababa Institute of Technology at Addis Ababa
+            University in 2021, with a graduation year of 2025.
+          </p>
+        </div>
+
+        <div class="row">
+          <h2>Experiences</h2>
+          <ul>
+            <li>
+              I was chosen to be a part of the Debre Markos university stem
+              center while I was a senior in high school. I triumphed in a
+              contest that the stem center held. Back then, I learned IT skills
+              thanks to this opportunity.
+            </li>
+            <li>
+              Web-snake: I build a snake game using javascript, html, and CSS.
+            </li>
+            <li>
+              A compiler that transforms c code into mips assembly language.
+            </li>
+            <li>
+              Hichat: a for-profit website with a live chat application. I'm
+              developing a chatApp app right now.
+            </li>
+            <li>
+              A hotel reservation website built on the AAiT project is called
+              maderia. I build the front-end.
+            </li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <h2>Awards</h2>
+          <p>
+            Certificate proving membership in the Debre Markos University Stem
+            Center since high school and winning a technology and innovation
+            competition there by creating a robotic hand.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
